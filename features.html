@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주요 기능 - 무장애 지하철 이동 경로 앱</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/demo-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>무장애 지하철 경로</h1>
+                <span>영등포구</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="about.html">앱 소개</a></li>
+                    <li><a href="features.html" class="active">주요 기능</a></li>
+                    <li><a href="demo.html">시연 체험</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h2>주요 기능</h2>
+            <p>무장애 지하철 이동 경로 앱이 제공하는 핵심 기능들</p>
+        </div>
+    </section>
+
+    <section class="feature-detailed">
+        <div class="container">
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="images/feature-elevator.svg" alt="실시간 엘리베이터 상태 모니터링">
+                </div>
+                <div class="feature-detail">
+                    <h3>실시간 엘리베이터 상태 모니터링</h3>
+                    <p>영등포구 내 2호선, 5호선, 9호선 역사의 모든 엘리베이터 작동 상태를 실시간으로 수집하여 표시합니다.</p>
+                    <ul class="feature-points">
+                        <li>영등포구 내 9개 역사의 총 36대 엘리베이터 정보 제공</li>
+                        <li>서울교통공사 시설관리 시스템과 API 연동으로 5분 간격 자동 갱신</li>
+                        <li>IoT 센서 기반 엘리베이터 상태 감지 시스템 적용</li>
+                        <li>색상 코드로 작동 상태 직관적 표시 (녹색: 정상, 노란색: 점검 중, 빨간색: 고장)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-item reverse">
+                <div class="feature-image">
+                    <img src="images/feature-route.svg" alt="개인 맞춤형 무장애 경로 추천">
+                </div>
+                <div class="feature-detail">
+                    <h3>개인 맞춤형 무장애 경로 추천</h3>
+                    <p>사용자 프로필을 기반으로 장애 유형별 최적화된 이동 경로를 제공합니다.</p>
+                    <ul class="feature-points">
+                        <li>휠체어 이용자, 시각장애인, 보행 약자 등 장애 유형별 경로 최적화</li>
+                        <li>'최소 이동 부담' 알고리즘 적용 (단순 최단 거리가 아닌 이동 편의성 고려)</li>
+                        <li>환승 시 층간 이동 최소화, 엘리베이터 위치 기반 최적 열차 탑승 위치 안내</li>
+                        <li>혼잡도 정보 반영 경로 추천 (평일/주말, 출퇴근 시간대별 역사 혼잡도 데이터 활용)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="images/feature-navigation.svg" alt="역사 내 정밀 실내 내비게이션">
+                </div>
+                <div class="feature-detail">
+                    <h3>역사 내 정밀 실내 내비게이션</h3>
+                    <p>역사 내 1m 이내 정밀도의 실내 길 안내로 복잡한 지하철 역사에서도 길을 잃지 않고 목적지에 도달할 수 있습니다.</p>
+                    <ul class="feature-points">
+                        <li>비콘 및 Wi-Fi 기반 측위 기술로 1m 이내 정밀도 실현</li>
+                        <li>3D 실내 지도로 입체적인 경로 안내 (영등포구청역, 당산역 우선 적용)</li>
+                        <li>시각장애인을 위한 음성 내비게이션 기능 (방향 전환 시 상세 안내)</li>
+                        <li>증강현실(AR) 기술을 활용한 직관적 경로 안내 (카메라를 통해 실제 환경에 안내 화살표 표시)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-item reverse">
+                <div class="feature-image">
+                    <img src="images/feature-emergency.svg" alt="비상 상황 대응 시스템">
+                </div>
+                <div class="feature-detail">
+                    <h3>비상 상황 대응 시스템</h3>
+                    <p>엘리베이터 고장이나 시설 이용 불가 상황에서 신속하게 대응할 수 있는 기능을 제공합니다.</p>
+                    <ul class="feature-points">
+                        <li>엘리베이터 고장 발생 시 실시간 우회 경로 자동 제안</li>
+                        <li>역사 내 공사, 임시 폐쇄 등 돌발 상황 정보 실시간 반영</li>
+                        <li>긴급 도움 요청 기능 (역무원 직통 연결, 위치 정보 자동 전송)</li>
+                        <li>위급 상황 시 인근 장애인 도우미 연결 서비스 (자원봉사자 네트워크 활용)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="images/feature-community.svg" alt="커뮤니티 참여형 정보 공유">
+                </div>
+                <div class="feature-detail">
+                    <h3>커뮤니티 참여형 정보 공유 플랫폼</h3>
+                    <p>사용자들이 직접 참여하여 실시간 정보를 공유하고 더 나은 서비스를 만들어 갑니다.</p>
+                    <ul class="feature-points">
+                        <li>사용자 참여형 시설물 상태 제보 시스템 (엘리베이터 고장, 점자블록 훼손 등)</li>
+                        <li>경로 리뷰 및 평가 기능 (이동 난이도, 소요시간 정확도 등 평가)</li>
+                        <li>장애 유형별 맞춤 이용 팁 공유 게시판</li>
+                        <li>주요 역사 무장애 시설 사진 및 영상 갤러리 (실제 경로 확인 가능)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-highlights">
+        <div class="container">
+            <h2 class="section-title">기술적 특징</h2>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>실시간 데이터 수집</h3>
+                    <p>IoT 센서 네트워크와 서울교통공사 API 연동을 통해 실시간으로 시설 상태 정보를 수집합니다.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>정밀 실내 위치 측위</h3>
+                    <p>비콘, Wi-Fi 핑거프린팅, 관성 측정 장치를 활용한 1m 이내 정밀도의 실내 위치 측위 시스템입니다.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>맞춤형 경로 알고리즘</h3>
+                    <p>거리, 시간, 환승 횟수, 층간 이동, 혼잡도 등을 종합적으로 고려한 다중 변수 최적화 알고리즘입니다.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>AR 내비게이션</h3>
+                    <p>SLAM 기술, 3D 모델링, AR 마커를 활용한 증강현실 기반 실내 내비게이션 시스템입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="implementation-process">
+        <div class="container">
+            <h2 class="section-title">단계적 구현 계획</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3>기반 구축 및 시범 서비스 (6개월)</h3>
+                        <ul>
+                            <li>핵심 데이터 수집 및 DB 구축</li>
+                            <li>앱 개발 및 기본 기능 구현</li>
+                            <li>영등포구청역, 당산역 2개 역사 시범 서비스</li>
+                            <li>장애인 사용자 50명 대상 시범 운영 및 피드백 수집</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3>서비스 확대 및 고도화 (6개월)</h3>
+                        <ul>
+                            <li>영등포구 내 전체 9개 역사로 서비스 확대</li>
+                            <li>실시간 모니터링 시스템 구축 완료</li>
+                            <li>AR 내비게이션 기능 추가</li>
+                            <li>커뮤니티 참여 기능 활성화</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3>안정화 및 연계 확대 (12개월)</h3>
+                        <ul>
+                            <li>서비스 안정화 및 성능 최적화</li>
+                            <li>버스, 장애인 콜택시 등 타 교통수단과 연계</li>
+                            <li>인접 구(양천구, 구로구 등)로 서비스 영역 확대</li>
+                            <li>사용자 피드백 기반 지속적 기능 개선</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h3>서울시 전역 확대 기반 마련 (12개월)</h3>
+                        <ul>
+                            <li>확장성 검증 및 기술 표준화</li>
+                            <li>서울시 전역 확대를 위한 표준 모델 개발</li>
+                            <li>타 지자체 이전을 위한 매뉴얼 작성</li>
+                            <li>민간 기업과의 협력 모델 구축</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-download">
+        <div class="container">
+            <div class="download-content">
+                <h2>앱 시연 체험하기</h2>
+                <p>무장애 지하철 경로 앱의 모든 기능을 직접 체험해보세요.</p>
+                <a href="demo.html" class="cta-primary">시연 시작하기</a>
+            </div>
+            <div class="download-image">
+                <img src="images/app-screens.svg" alt="앱 스크린샷">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>무장애 지하철 경로 앱</h3>
+                    <p>영등포구 교통약자 이동권 향상 프로젝트</p>
+                </div>
+                <div class="footer-links">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="about.html">앱 소개</a></li>
+                        <li><a href="features.html">주요 기능</a></li>
+                        <li><a href="demo.html">시연 체험</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>문의</h4>
+                    <p>연락처: 02-2670-7530 (영등포구 기획예산과)</p>
+                    <p>이메일: sh1016@ydp.go.kr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 서울특별시 영등포구. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

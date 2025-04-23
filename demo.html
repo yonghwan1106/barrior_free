@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시연 체험 - 무장애 지하철 이동 경로 앱</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/demo-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>무장애 지하철 경로</h1>
+                <span>영등포구</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="about.html">앱 소개</a></li>
+                    <li><a href="features.html">주요 기능</a></li>
+                    <li><a href="demo.html" class="active">시연 체험</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h2>시연 체험</h2>
+            <p>무장애 지하철 경로 앱의 핵심 기능을 직접 체험해보세요</p>
+        </div>
+    </section>
+
+    <section class="demo-intro">
+        <div class="container">
+            <p class="intro-text">이 페이지에서는 무장애 지하철 경로 앱의 주요 기능을 시뮬레이션하여 체험해볼 수 있습니다. 아래 시연을 통해 장애인과 교통약자를 위한 혁신적인 지하철 이동 솔루션을 경험해보세요.</p>
+            
+            <div class="user-profile-selector">
+                <h3>사용자 프로필 선택</h3>
+                <p>시연을 시작하기 전에 사용자 프로필을 선택해주세요.</p>
+                
+                <div class="profile-options">
+                    <div class="profile-option" data-profile="wheelchair">
+                        <div class="profile-icon">
+                            <i class="fas fa-wheelchair"></i>
+                        </div>
+                        <h4>휠체어 이용자</h4>
+                    </div>
+                    
+                    <div class="profile-option" data-profile="visually-impaired">
+                        <div class="profile-icon">
+                            <i class="fas fa-blind"></i>
+                        </div>
+                        <h4>시각장애인</h4>
+                    </div>
+                    
+                    <div class="profile-option" data-profile="elderly">
+                        <div class="profile-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <h4>보행 약자</h4>
+                    </div>
+                    
+                    <div class="profile-option" data-profile="hearing-impaired">
+                        <div class="profile-icon">
+                            <i class="fas fa-deaf"></i>
+                        </div>
+                        <h4>청각장애인</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-main">
+        <div class="container">
+            <div class="demo-station-selector">
+                <h3>출발역과 도착역 선택</h3>
+                
+                <div class="station-selector">
+                    <div class="station-from">
+                        <label for="from-station">출발역</label>
+                        <select id="from-station">
+                            <option value="">-- 선택하세요 --</option>
+                            <option value="yeongdeungpo-office">영등포구청역 (2호선, 5호선)</option>
+                            <option value="dangsan">당산역 (2호선, 9호선)</option>
+                            <option value="yeouido">여의도역 (9호선)</option>
+                            <option value="yeongdeungpo-market">영등포시장역 (5호선)</option>
+                            <option value="mullae">문래역 (2호선)</option>
+                            <option value="yangpyeong">양평역 (5호선)</option>
+                            <option value="singil">신길역 (1호선, 5호선)</option>
+                            <option value="sinmokdong">신목동역 (9호선)</option>
+                            <option value="national-assembly">국회의사당역 (9호선)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="station-arrow">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    
+                    <div class="station-to">
+                        <label for="to-station">도착역</label>
+                        <select id="to-station">
+                            <option value="">-- 선택하세요 --</option>
+                            <option value="yeongdeungpo-office">영등포구청역 (2호선, 5호선)</option>
+                            <option value="dangsan">당산역 (2호선, 9호선)</option>
+                            <option value="yeouido">여의도역 (9호선)</option>
+                            <option value="yeongdeungpo-market">영등포시장역 (5호선)</option>
+                            <option value="mullae">문래역 (2호선)</option>
+                            <option value="yangpyeong">양평역 (5호선)</option>
+                            <option value="singil">신길역 (1호선, 5호선)</option>
+                            <option value="sinmokdong">신목동역 (9호선)</option>
+                            <option value="national-assembly">국회의사당역 (9호선)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="options-container">
+                    <div class="time-option">
+                        <label for="time-preference">시간대 선택:</label>
+                        <select id="time-preference">
+                            <option value="normal">일반 시간대</option>
+                            <option value="rush-morning">출근 시간대 (7:00-9:00)</option>
+                            <option value="rush-evening">퇴근 시간대 (18:00-20:00)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="preference-option">
+                        <label for="route-preference">경로 선호도:</label>
+                        <select id="route-preference">
+                            <option value="optimal">최적 경로 (추천)</option>
+                            <option value="less-transfer">환승 최소화</option>
+                            <option value="less-walking">이동 거리 최소화</option>
+                            <option value="less-elevator">엘리베이터 사용 최소화</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button id="find-route" class="cta-primary">경로 찾기</button>
+            </div>
+            
+            <div class="demo-result" style="display: none;">
+                <div class="result-loading">
+                    <div class="loader"></div>
+                    <p>최적 경로를 찾는 중입니다...</p>
+                </div>
+                
+                <div class="result-content" style="display: none;">
+                    <div class="result-summary">
+                        <div class="result-from-to">
+                            <div class="result-station result-from">
+                                <div class="station-name">영등포구청역</div>
+                                <div class="station-lines">
+                                    <span class="line-2">2호선</span>
+                                    <span class="line-5">5호선</span>
+                                </div>
+                            </div>
+                            <div class="route-arrow">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                            <div class="result-station result-to">
+                                <div class="station-name">당산역</div>
+                                <div class="station-lines">
+                                    <span class="line-2">2호선</span>
+                                    <span class="line-9">9호선</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span class="info-label">예상 소요시간:</span>
+                                <span class="info-value">15분</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-walking"></i>
+                                <span class="info-label">총 이동거리:</span>
+                                <span class="info-value">320m</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-elevator"></i>
+                                <span class="info-label">엘리베이터 이용:</span>
+                                <span class="info-value">2회</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span class="info-label">환승:</span>
+                                <span class="info-value">1회</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="route-details">
+                        <h3>상세 경로 안내</h3>
+                        
+                        <div class="route-timeline">
+                            <div class="route-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>영등포구청역 5호선 승강장</h4>
+                                    <p>출발지점</p>
+                                </div>
+                            </div>
+                            
+                            <div class="route-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-elevator"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>엘리베이터 이용 (E-01)</h4>
+                                    <p>5호선 승강장에서 환승통로까지</p>
+                                    <div class="facility-status available">
+                                        <i class="fas fa-check-circle"></i> 정상 운행 중
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="route-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-walking"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>환승통로 이동</h4>
+                                    <p>5호선 환승통로를 따라 2호선 방향으로 이동 (약 120m)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="route-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-elevator"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>엘리베이터 이용 (E-04)</h4>
+                                    <p>환승통로에서 2호선 승강장까지</p>
+                                    <div class="facility-status available">
+                                        <i class="fas fa-check-circle"></i> 정상 운행 중
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="route-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-subway"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>2호선 탑승</h4>
+                                    <p>신도림 방향 열차 탑승 (2-3번 출입구 앞 승강장)</p>
+                                    <div class="train-info">
+                                        <p>다음 열차: 3분 후 도착</p>
+                                        <p>현재 혼잡도: <span class="congestion medium">보통</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="route-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-train"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>2호선 이동</h4>
+                                    <p>영등포구청역에서 당산역까지 1개 역 이동 (약 3분)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="route-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-subway"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>당산역 하차</h4>
+                                    <p>당산역 2호선 승강장 도착</p>
+                                </div>
+                            </div>
+                            
+                            <div class="route-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-flag-checkered"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>당산역 2호선 승강장</h4>
+                                    <p>목적지 도착</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="route-map">
+                        <h3>경로 지도</h3>
+                        <div class="map-container">
+                            <img src="images/route-map.svg" alt="영등포구청역에서 당산역까지의 경로 지도">
+                        </div>
+                    </div>
+                    
+                    <div class="route-actions">
+                        <button class="btn-outline route-modify"><i class="fas fa-edit"></i> 경로 수정</button>
+                        <button class="cta-primary route-start"><i class="fas fa-play"></i> 내비게이션 시작</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="elevator-status">
+        <div class="container">
+            <h2 class="section-title">실시간 엘리베이터 상태 확인</h2>
+            <p class="section-desc">영등포구 내 주요 지하철역의 엘리베이터 작동 상태를 실시간으로 확인할 수 있습니다.</p>
+            
+            <div class="elevator-filter">
+                <label for="station-filter">역 선택:</label>
+                <select id="station-filter">
+                    <option value="all">모든 역</option>
+                    <option value="yeongdeungpo-office">영등포구청역</option>
+                    <option value="dangsan">당산역</option>
+                    <option value="yeouido">여의도역</option>
+                    <option value="yeongdeungpo-market">영등포시장역</option>
+                    <option value="mullae">문래역</option>
+                </select>
+            </div>
+            
+            <div class="elevator-list">
+                <div class="elevator-item" data-station="yeongdeungpo-office">
+                    <div class="elevator-station">
+                        <h3>영등포구청역</h3>
+                        <div class="station-lines">
+                            <span class="line-2">2호선</span>
+                            <span class="line-5">5호선</span>
+                        </div>
+                    </div>
+                    <div class="elevator-details">
+                        <div class="elevator-unit available">
+                            <div class="unit-name">E-01</div>
+                            <div class="unit-location">5호선 승강장 ↔ 환승통로</div>
+                            <div class="unit-status">
+                                <i class="fas fa-check-circle"></i> 정상 운행 중
+                            </div>
+                        </div>
+                        <div class="elevator-unit available">
+                            <div class="unit-name">E-02</div>
+                            <div class="unit-location">5호선 승강장 ↔ 대합실</div>
+                            <div class="unit-status">
+                                <i class="fas fa-check-circle"></i> 정상 운행 중
+                            </div>
+                        </div>
+                        <div class="elevator-unit maintenance">
+                            <div class="unit-name">E-03</div>
+                            <div class="unit-location">대합실 ↔ 지상 1번 출구</div>
+                            <div class="unit-status">
+                                <i class="fas fa-tools"></i> 점검 중 (17:00 완료 예정)
+                            </div>
+                        </div>
+                        <div class="elevator-unit available">
+                            <div class="unit-name">E-04</div>
+                            <div class="unit-location">환승통로 ↔ 2호선 승강장</div>
+                            <div class="unit-status">
+                                <i class="fas fa-check-circle"></i> 정상 운행 중
+                            </div>
+                        </div>
+                        <div class="elevator-unit available">
+                            <div class="unit-name">E-05</div>
+                            <div class="unit-location">2호선 승강장 ↔ 대합실</div>
+                            <div class="unit-status">
+                                <i class="fas fa-check-circle"></i> 정상 운행 중
+                            </div>
+                        </div>
+                        <div class="elevator-unit available">
+                            <div class="unit-name">E-06</div>
+                            <div class="unit-location">대합실 ↔ 지상 5번 출구</div>
+                            <div class="unit-status">
+                                <i class="fas fa-check-circle"></i> 정상 운행 중
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="elevator-item" data-station="dangsan">
+                    <div class="elevator-station">
+                        <h3>당산역</h3>
+                        <div class="station-lines">
+                            <span class="line-2">2호선</span>
+                            <span class="line-9">9호선</span>
+                        </div>
+                    </div>
+                    <div class="elevator-details">
+                        <div class="elevator-unit available">
+                            <div class="unit-name">E-01</div>
+                            <div class="unit-location">2호선 승강장 ↔ 대합실</div>
+                            <div class="unit-status">
+                                <i class="fas fa-check-circle"></i> 정상 운행 중
+                            </div>
+                        </div>
+                        <div class="elevator-unit unavailable">
+                            <div class="unit-name">E-02</div>
+                            <div class="unit-location">2호선 승강장 ↔ 환승통로</div>
+                            <div class="unit-status">
+                                <i class="fas fa-times-circle"></i> 고장 (수리 중, 15시 복구 예정)
+                            </div>
+                        </div>
+                        <div class="elevator-unit available">
+                            <div class="unit-name">E-03</div>
+                            <div class="unit-location">환승통로 ↔ 9호선 승강장</div>
+                            <div class="unit-status">
+                                <i class="fas fa-check-circle"></i> 정상 운행 중
+                            </div>
+                        </div>
+                        <div class="elevator-unit available">
+                            <div class="unit-name">E-04</div>
+                            <div class="unit-location">9호선 승강장 ↔ 대합실</div>
+                            <div class="unit-status">
+                                <i class="fas fa-check-circle"></i> 정상 운행 중
+                            </div>
+                        </div>
+                        <div class="elevator-unit available">
+                            <div class="unit-name">E-05</div>
+                            <div class="unit-location">대합실 ↔ 지상 1번 출구</div>
+                            <div class="unit-status">
+                                <i class="fas fa-check-circle"></i> 정상 운행 중
+                            </div>
+                        </div>
+                        <div class="elevator-unit available">
+                            <div class="unit-name">E-06</div>
+                            <div class="unit-location">대합실 ↔ 지상 4번 출구</div>
+                            <div class="unit-status">
+                                <i class="fas fa-check-circle"></i> 정상 운행 중
+                            </div>
+                        </div>
+                        <div class="elevator-unit available">
+                            <div class="unit-name">E-07</div>
+                            <div class="unit-location">대합실 ↔ 지상 7번 출구</div>
+                            <div class="unit-status">
+                                <i class="fas fa-check-circle"></i> 정상 운행 중
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 나머지 역들의 엘리베이터 정보는 생략 (데모 목적상) -->
+            </div>
+            
+            <div class="status-update-time">
+                <p>마지막 업데이트: 2025년 4월 21일 12:45</p>
+                <button id="refresh-status" class="btn-outline"><i class="fas fa-sync-alt"></i> 상태 새로고침</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="emergency-simulation">
+        <div class="container">
+            <h2 class="section-title">비상 상황 시뮬레이션</h2>
+            <p class="section-desc">엘리베이터 고장 등 비상 상황 발생 시 앱의 대응을 시뮬레이션합니다.</p>
+            
+            <div class="simulation-controls">
+                <button id="simulate-elevator-failure" class="cta-secondary">엘리베이터 고장 상황 시뮬레이션</button>
+                <button id="simulate-congestion" class="cta-secondary">혼잡 상황 시뮬레이션</button>
+                <button id="simulate-help" class="cta-secondary">긴급 도움 요청 시뮬레이션</button>
+            </div>
+            
+            <div class="simulation-result" style="display: none;">
+                <!-- 시뮬레이션 결과가 여기에 표시됩니다 -->
+            </div>
+        </div>
+    </section>
+
+    <section class="user-feedback">
+        <div class="container">
+            <h2 class="section-title">앱 체험 후기</h2>
+            <p class="section-desc">시연 체험 후 의견을 남겨주세요. 소중한 피드백은 더 나은 서비스 개발에 반영됩니다.</p>
+            
+            <form class="feedback-form">
+                <div class="form-group">
+                    <label for="user-type">사용자 유형</label>
+                    <select id="user-type" required>
+                        <option value="">-- 선택하세요 --</option>
+                        <option value="wheelchair">휠체어 이용자</option>
+                        <option value="visually-impaired">시각장애인</option>
+                        <option value="elderly">노인/보행 약자</option>
+                        <option value="hearing-impaired">청각장애인</option>
+                        <option value="general">일반 사용자</option>
+                        <option value="other">기타</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="satisfaction">전반적인 만족도</label>
+                    <div class="rating-stars">
+                        <span class="star" data-rating="1"><i class="far fa-star"></i></span>
+                        <span class="star" data-rating="2"><i class="far fa-star"></i></span>
+                        <span class="star" data-rating="3"><i class="far fa-star"></i></span>
+                        <span class="star" data-rating="4"><i class="far fa-star"></i></span>
+                        <span class="star" data-rating="5"><i class="far fa-star"></i></span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedback-text">의견 및 개선 제안</label>
+                    <textarea id="feedback-text" rows="5" placeholder="앱 사용 경험과 개선 제안 사항을 자유롭게 작성해주세요."></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="cta-primary">의견 제출</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>무장애 지하철 경로 앱</h3>
+                    <p>영등포구 교통약자 이동권 향상 프로젝트</p>
+                </div>
+                <div class="footer-links">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="about.html">앱 소개</a></li>
+                        <li><a href="features.html">주요 기능</a></li>
+                        <li><a href="demo.html">시연 체험</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>문의</h4>
+                    <p>연락처: 02-2670-7530 (영등포구 기획예산과)</p>
+                    <p>이메일: sh1016@ydp.go.kr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 서울특별시 영등포구. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/simulator.js"></script>
+</body>
+</html>
