@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect x="0" y="0" width="400" height="300" rx="10" ry="10" fill="#f5f7fa" />
+  
+  <!-- 상단 텍스트 -->
+  <text x="70" y="30" font-family="Arial" font-size="18" font-weight="bold" fill="#1c79f2">커뮤니티 참여형 정보 공유 플랫폼</text>
+  
+  <!-- 메인 박스 -->
+  <rect x="30" y="50" width="340" height="220" rx="10" ry="10" fill="white" stroke="#e1e4e8" stroke-width="1" />
+  
+  <!-- 탭 네비게이션 -->
+  <rect x="30" y="50" width="340" height="40" rx="10" ry="10" fill="#f5f7fa" />
+  
+  <rect x="40" y="55" width="80" height="30" rx="5" ry="5" fill="#1c79f2" />
+  <text x="80" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="white">제보 현황</text>
+  
+  <text x="165" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#666666">경로 리뷰</text>
+  <text x="230" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#666666">이용 팁</text>
+  <text x="310" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#666666">사진/영상</text>
+  
+  <!-- 제보 목록 -->
+  <!-- 항목 1 -->
+  <rect x="40" y="100" width="320" height="60" rx="5" ry="5" fill="#f5f7fa" />
+  
+  <circle cx="60" cy="120" r="10" fill="#ff3b30" opacity="0.8" />
+  <text x="60" y="125" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">!</text>
+  
+  <text x="80" y="115" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">당산역 엘리베이터(E-02) 고장</text>
+  <text x="80" y="135" font-family="Arial" font-size="12" fill="#666666">10분 전 제보 · 3명 확인</text>
+  
+  <rect x="300" y="115" width="50" height="20" rx="10" ry="10" fill="#ff3b30" opacity="0.1" />
+  <text x="325" y="130" font-family="Arial" font-size="11" text-anchor="middle" fill="#ff3b30">고장</text>
+  
+  <!-- 항목 2 -->
+  <rect x="40" y="170" width="320" height="60" rx="5" ry="5" fill="#f5f7fa" />
+  
+  <circle cx="60" cy="190" r="10" fill="#ffcc00" opacity="0.8" />
+  <text x="60" y="195" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">!</text>
+  
+  <text x="80" y="185" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">영등포구청역 점자블록 일부 훼손</text>
+  <text x="80" y="205" font-family="Arial" font-size="12" fill="#666666">30분 전 제보 · 2명 확인</text>
+  
+  <rect x="300" y="185" width="50" height="20" rx="10" ry="10" fill="#ffcc00" opacity="0.1" />
+  <text x="325" y="200" font-family="Arial" font-size="11" text-anchor="middle" fill="#ffcc00">주의</text>
+  
+  <!-- 하단 버튼 -->
+  <rect x="150" y="240" width="100" height="35" rx="17.5" ry="17.5" fill="#1c79f2" />
+  <text x="200" y="263" font-family="Arial" font-size="14" text-anchor="middle" fill="white">제보하기</text>
+  <text x="235" y="263" font-family="Arial" font-size="14" text-anchor="middle" fill="white">+</text>
+  
+  <!-- 사용자 프로필들 -->
+  <!--g transform="translate(340, 70)">
+    <circle cx="0" cy="0" r="15" fill="#1c79f2" opacity="0.2" />
+    <text x="0" y="5" font-family="Arial" font-size="10" text-anchor="middle" fill="#1c79f2">10+</text>
+  </g>
+  
+  <g transform="translate(310, 70)">
+    <circle cx="0" cy="0" r="15" fill="#1c79f2" opacity="0.5" />
+    <text x="0" y="5" font-family="Arial" font-size="16" text-anchor="middle" fill="white">👤</text>
+  </g>
+  
+  <g transform="translate(280, 70)">
+    <circle cx="0" cy="0" r="15" fill="#1c79f2" />
+    <text x="0" y="5" font-family="Arial" font-size="16" text-anchor="middle" fill="white">👤</text>
+  </g-->
+  
+  <!-- 사이드 패널 (제보 상태 요약) -->
+  <!--g transform="translate(350, 170)">
+    <circle cx="0" cy="-40" r="10" fill="#34c759" opacity="0.3" />
+    <text x="0" y="-37" font-family="Arial" font-size="10" text-anchor="middle" fill="#34c759">15</text>
+    
+    <circle cx="0" cy="0" r="10" fill="#ffcc00" opacity="0.3" />
+    <text x="0" y="3" font-family="Arial" font-size="10" text-anchor="middle" fill="#ffcc00">8</text>
+    
+    <circle cx="0" cy="40" r="10" fill="#ff3b30" opacity="0.3" />
+    <text x="0" y="43" font-family="Arial" font-size="10" text-anchor="middle" fill="#ff3b30">3</text>
+  </g-->
+</svg>

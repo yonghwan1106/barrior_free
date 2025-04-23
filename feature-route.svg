@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect x="0" y="0" width="400" height="300" rx="10" ry="10" fill="#f5f7fa" />
+  
+  <!-- 상단 텍스트 -->
+  <text x="100" y="30" font-family="Arial" font-size="18" font-weight="bold" fill="#1c79f2">맞춤형 무장애 경로 추천</text>
+  
+  <!-- 지하철 노선도 배경 -->
+  <rect x="30" y="50" width="340" height="200" rx="10" ry="10" fill="white" stroke="#e1e4e8" stroke-width="1" />
+  
+  <!-- 2호선 -->
+  <path d="M50,100 C80,100 100,150 130,150 C160,150 170,100 200,100 C230,100 240,150 270,150 C300,150 320,100 350,100" stroke="#00A84D" stroke-width="6" fill="none" />
+  
+  <!-- 5호선 -->
+  <path d="M50,200 L350,200" stroke="#996CAC" stroke-width="6" fill="none" />
+  
+  <!-- 환승역 표시 -->
+  <circle cx="130" cy="150" r="10" fill="white" stroke="#00A84D" stroke-width="3" />
+  <circle cx="130" cy="200" r="10" fill="white" stroke="#996CAC" stroke-width="3" />
+  <line x1="130" y1="160" x2="130" y2="190" stroke="#333333" stroke-width="2" stroke-dasharray="3,3" />
+  <text x="130" y="230" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">영등포구청역</text>
+  
+  <circle cx="270" cy="150" r="10" fill="white" stroke="#00A84D" stroke-width="3" />
+  <text x="270" y="180" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">당산역</text>
+  
+  <!-- 사용자 프로필 아이콘 -->
+  <circle cx="70" cy="70" r="20" fill="#1c79f2" />
+  <text x="70" y="76" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="white">👤</text>
+  
+  <!-- 장애 유형 선택 UI -->
+  <rect x="100" y="55" width="80" height="30" rx="5" ry="5" fill="#1c79f2" />
+  <text x="140" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="white">휠체어 이용자</text>
+  
+  <rect x="190" y="55" width="80" height="30" rx="5" ry="5" fill="#f5f7fa" stroke="#e1e4e8" stroke-width="1" />
+  <text x="230" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">시각장애인</text>
+  
+  <rect x="280" y="55" width="70" height="30" rx="5" ry="5" fill="#f5f7fa" stroke="#e1e4e8" stroke-width="1" />
+  <text x="315" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">보행 약자</text>
+  
+  <!-- 경로 표시 -->
+  <path d="M130,200 L130,160 L130,150 C130,150 160,150 270,150" stroke="#1c79f2" stroke-width="4" fill="none" stroke-dasharray="8,4" />
+  <polygon points="264,145 264,155 277,150" fill="#1c79f2" />
+  
+  <!-- 이동 정보 패널 -->
+  <rect x="60" y="250" width="280" height="40" rx="5" ry="5" fill="#1c79f2" opacity="0.1" stroke="#1c79f2" stroke-width="1" />
+  
+  <g transform="translate(80, 270)">
+    <text x="0" y="0" font-family="Arial" font-size="12" text-anchor="middle" fill="#1c79f2">15분</text>
+    <text x="0" y="15" font-family="Arial" font-size="10" text-anchor="middle" fill="#666666">소요시간</text>
+  </g>
+  
+  <g transform="translate(150, 270)">
+    <text x="0" y="0" font-family="Arial" font-size="12" text-anchor="middle" fill="#1c79f2">300m</text>
+    <text x="0" y="15" font-family="Arial" font-size="10" text-anchor="middle" fill="#666666">이동거리</text>
+  </g>
+  
+  <g transform="translate(220, 270)">
+    <text x="0" y="0" font-family="Arial" font-size="12" text-anchor="middle" fill="#1c79f2">2회</text>
+    <text x="0" y="15" font-family="Arial" font-size="10" text-anchor="middle" fill="#666666">엘리베이터</text>
+  </g>
+  
+  <g transform="translate(290, 270)">
+    <text x="0" y="0" font-family="Arial" font-size="12" text-anchor="middle" fill="#1c79f2">0회</text>
+    <text x="0" y="15" font-family="Arial" font-size="10" text-anchor="middle" fill="#666666">환승</text>
+  </g>
+</svg>

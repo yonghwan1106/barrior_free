@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect x="0" y="0" width="400" height="300" rx="10" ry="10" fill="#f5f7fa" />
+  
+  <!-- 지하철역 윤곽 -->
+  <rect x="50" y="50" width="300" height="200" rx="5" ry="5" fill="white" stroke="#e1e4e8" stroke-width="2" />
+  
+  <!-- 층간 구분선 -->
+  <line x1="50" y1="150" x2="350" y2="150" stroke="#e1e4e8" stroke-width="2" stroke-dasharray="5,3" />
+  
+  <!-- 상단 텍스트 -->
+  <text x="110" y="30" font-family="Arial" font-size="18" font-weight="bold" fill="#1c79f2">실시간 엘리베이터 상태</text>
+  
+  <!-- 엘리베이터 1 (정상) -->
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" width="50" height="80" rx="3" ry="3" fill="#f5f7fa" stroke="#e1e4e8" stroke-width="2" />
+    <rect x="5" y="5" width="40" height="70" rx="2" ry="2" fill="white" stroke="#e1e4e8" stroke-width="1" />
+    <text x="25" y="30" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">E-01</text>
+    <circle cx="25" cy="50" r="12" fill="#34c759" />
+    <text x="25" y="55" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">↑</text>
+    <text x="25" y="75" font-family="Arial" font-size="10" text-anchor="middle" fill="#34c759">정상</text>
+  </g>
+  
+  <!-- 엘리베이터 2 (점검 중) -->
+  <g transform="translate(180, 90)">
+    <rect x="0" y="0" width="50" height="80" rx="3" ry="3" fill="#f5f7fa" stroke="#e1e4e8" stroke-width="2" />
+    <rect x="5" y="5" width="40" height="70" rx="2" ry="2" fill="white" stroke="#e1e4e8" stroke-width="1" />
+    <text x="25" y="30" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">E-02</text>
+    <circle cx="25" cy="50" r="12" fill="#ffcc00" />
+    <text x="25" y="55" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">!</text>
+    <text x="25" y="75" font-family="Arial" font-size="10" text-anchor="middle" fill="#ffcc00">점검 중</text>
+  </g>
+  
+  <!-- 엘리베이터 3 (고장) -->
+  <g transform="translate(280, 90)">
+    <rect x="0" y="0" width="50" height="80" rx="3" ry="3" fill="#f5f7fa" stroke="#e1e4e8" stroke-width="2" />
+    <rect x="5" y="5" width="40" height="70" rx="2" ry="2" fill="white" stroke="#e1e4e8" stroke-width="1" />
+    <text x="25" y="30" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">E-03</text>
+    <circle cx="25" cy="50" r="12" fill="#ff3b30" />
+    <text x="25" y="55" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">✕</text>
+    <text x="25" y="75" font-family="Arial" font-size="10" text-anchor="middle" fill="#ff3b30">고장</text>
+  </g>
+  
+  <!-- 지하철 노선 -->
+  <line x1="100" y1="200" x2="300" y2="200" stroke="#00A84D" stroke-width="8" />
+  <circle cx="120" cy="200" r="6" fill="white" stroke="#00A84D" stroke-width="2" />
+  <circle cx="180" cy="200" r="6" fill="white" stroke="#00A84D" stroke-width="2" />
+  <text x="180" y="220" font-family="Arial" font-size="14" text-anchor="middle" fill="#00A84D">2호선</text>
+  <circle cx="240" cy="200" r="6" fill="white" stroke="#00A84D" stroke-width="2" />
+  <circle cx="280" cy="200" r="6" fill="white" stroke="#00A84D" stroke-width="2" />
+  
+  <!-- 범례 -->
+  <g transform="translate(50, 250)">
+    <circle cx="10" cy="10" r="6" fill="#34c759" />
+    <text x="25" y="15" font-family="Arial" font-size="12" fill="#333333">정상 운행</text>
+    
+    <circle cx="110" cy="10" r="6" fill="#ffcc00" />
+    <text x="125" y="15" font-family="Arial" font-size="12" fill="#333333">점검 중</text>
+    
+    <circle cx="210" cy="10" r="6" fill="#ff3b30" />
+    <text x="225" y="15" font-family="Arial" font-size="12" fill="#333333">고장</text>
+  </g>
+</svg>
